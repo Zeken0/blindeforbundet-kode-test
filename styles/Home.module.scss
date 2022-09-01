@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+
+.container {
+  font-family: 'Open Sans', sans-serif;
+  padding: 1rem 0rem;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  box-shadow: 0 1.7px 2px -2px rgb(0 0 0 / 20%);
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10rem;
+  align-items: center;
+
+  .main_info {
+    border-radius: 3px;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    h1 {
+      color: #d01f43;
+      font-family: 'Jost', sans-serif;
+    }
+
+    p {
+      color: white;
+      font-weight: 400;
+      font-size: 0.9rem;
+      letter-spacing: 0.3px;
+      line-height: 1.82rem;
+      line-break: auto;
+    }
+  }
+
+  .main_form {
+    width: 100%;
+
+    .form {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 1.2rem;
+      column-gap: 3rem;
+      
+      .form_control_checkbox {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+
+        .form_input_checkbox {
+          cursor: pointer;
+          width: 1rem;
+          height: 1rem;
+          border-color: #d01f43;
+          border: solid;
+          background-color: transparent !important;
+          outline: none;
+        }
+      }
+  
+      .form_control {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+  
+        .form_label {
+          font-size: 0.95rem ;
+          font-weight: 500;
+          color: #212529;
+        }
+  
+        .text_danger {
+          color: #f02850;
+          font-size: 0.93rem;
+        }
+  
+        input, .form_input_comment {
+          background-color: white;
+          border: none;
+          outline: none;
+          font-size: 0.92rem;
+          padding: 0 12px 0 12px;
+          font-weight: 400;
+          border-radius: 3px 0 0 3px;
+          box-shadow: 0.1px 0.5px 2.5px 1.2px rgb(0 0 0 / 10%);
+          color: black;
+          height: 2.1rem;
+          width: 13rem;
+        }
+
+        .form_input_comment {
+          height: 5rem;
+          padding-top: 0.5rem;
+        }
+
+        
+      }
+
+      .form_actions {
+        margin-top: 3rem;
+        display:  flex;
+        column-gap: 2rem;
+
+        .form_button_submit {
+          font-family: 'Jost', sans-serif;
+          height: 4rem;
+          font-weight: 500;
+          color: white;
+          background-color: #d01f43;
+          border-width: 2.5px;
+          border: solid;
+          border-color: #d01f43 ;
+          border-radius: 3px;
+          outline: none;
+          width: 7rem;
+          letter-spacing: 0.1rem;
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: #f02850;
+          border-color: #f02850;
+        }
+
+        .form_button_reset {
+          cursor: pointer;
+          font-family: 'Jost', sans-serif;
+          height: 4rem;
+          font-weight: 500;
+          color: #d01f43;
+          background-color: transparent;
+          border-width: 2.5px;
+          border: solid;
+          border-color: #d01f43 ;
+          border-radius: 3px;
+          outline: none;
+          width: 7rem;
+          letter-spacing: 0.1rem;
+        }
+
+        .form_button_reset:hover {
+          color: white;
+          background-color: #f02850;
+          border-color: #f02850;
+        }
+      }
+  }
+
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 1112px) {
+  .main {
+    flex-direction: column;
+    row-gap: 3rem;
+
+    .main_info {
+      height: 80%;
+    }
+
+    .main_form {
+      height: 100%;
+      width: 80%;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+
+      form {
+        column-gap: 3rem !important;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .main {
+    height: fit-content;
+    width: 95% !important;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    .main_info {
+      height: 100%;
+
+    }
+    .form {
+      align-items: center;
+      justify-content: center;
+      .form_control {
+
+        input, .form_input_comment {
+          width: 20rem !important;
+        }
+      }
+    } 
+  }
+}
+
+
