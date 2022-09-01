@@ -145,9 +145,9 @@ export default function Home() {
               ) : null}
             </div>
 
-            <Radio.Group label="Betalingstype" spacing="sm" color="red">
-              <Radio value="Vipps" label="Vipps" />
-              <Radio value="Kort" label="Kort" />
+            <Radio.Group label="Betalingstype" spacing="sm">
+              <Radio value="Vipps" label="Vipps" color="red" />
+              <Radio value="Kort" label="Kort" color="red" />
             </Radio.Group>
 
             <div className={styles.form_control}>
